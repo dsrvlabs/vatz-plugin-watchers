@@ -27,7 +27,7 @@ var (
 	port             int
 	validatorAddress string
 	rpcep            string
-	aleartCount      int
+	aleartCondition  int
 	count            int
 )
 
@@ -36,7 +36,7 @@ func init() {
 	flag.IntVar(&port, "port", defaultPort, "Listening port")
 	flag.StringVar(&rpcep, "rpcurl", defaultRPCEndpoint, "Cosmos RPC Endpoint")
 	flag.StringVar(&validatorAddress, "validator", "", "Cosmos validator address from public key")
-	flag.IntVar(&aleartCount, "condition", defaultAlertCondition, "Thresholds that trigger notifications")
+	flag.IntVar(&aleartCondition, "condition", defaultAlertCondition, "Thresholds that trigger notifications")
 
 	flag.Parse()
 }
@@ -70,9 +70,10 @@ func pluginFeature(info, option map[string]*structpb.Value) (sdk.CallResponse, e
 			msg = fmt.Sprintf("The validator is signing the block successfully.")
 		} else {
 			count++
-			if count >= aleartCount {
+			log.Debug().Str("module", "plugin").Msgf("The validator is not signing the block. count: %d", count)
+			if count >= aleartCondition {
 				severity = pluginpb.SEVERITY_CRITICAL
-				msg = fmt.Sprintf("")
+				msg = fmt.Sprintf("The block does not have a signature from the validator.")
 			}
 		}
 		log.Debug().Str("module", "plugin").Msg(msg)
