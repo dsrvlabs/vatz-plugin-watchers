@@ -78,15 +78,16 @@ Usage of node_block_sync:
 
 ## Using Script for plugins mandatory flags
 ```
-$ ./sciprt/get_validator_address.sh
-Enter the RPC address: http://127.0.0.1:26657
-Enter the endpoint: http://127.0.0.1:26657
-Enter the valoper address: osmovaloper1tt8dczjk62pnwwanm99rq2kw25r7vdgtxy5jym
+$ ./sciprt/get_veloper_addre_hex.sh
+Enter the Rest Endpoint: http://127.0.0.1:26657
+Enter the RPC Endpoint: http://127.0.0.1:26657
+Enter the valoper address: someValoperAddr1tt8dczjk62pnwwanm99rq2kw25
+ 
 You have entered the following details:
-RPC address: http://127.0.0.1:26657
-Endpoint: http://127.0.0.1:26657
-Valoper address: osmovaloper1tt8dczjk62pnwwanm99rq2kw25r7vdgtxy5jym
-Are the entered values correct? Do you wish to proceed? (y/n): Y
+Rest Endpoint: http://127.0.0.1:26657
+RPC Endpoint: http://127.0.0.1:26657
+Valoper(Validator Operator) address: someValoperAddr1tt8dczjk62pnwwanm99rq2kw25
+Are the entered values correct? Do you wish to proceed? (y/n): 
 Validator address: cosmosvaloper1...
 ```
 
