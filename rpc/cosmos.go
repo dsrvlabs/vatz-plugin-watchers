@@ -3,7 +3,7 @@ package rpc
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 )
 
@@ -17,7 +17,7 @@ func HasValidatorSignature(basRPC string, validatorAddress string) (bool, error)
 	defer resp.Body.Close()
 
 	// Read response body
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return false, fmt.Errorf("error reading response body: %w", err)
 	}
