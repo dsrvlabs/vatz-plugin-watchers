@@ -79,12 +79,12 @@ Usage of node_block_sync:
 ## Using Script for plugins mandatory flags
 ```
 $ ./sciprt/get_veloper_addre_hex.sh
-Enter the Rest Endpoint: http://127.0.0.1:26657
+Enter the Rest Endpoint: http://127.0.0.1:1317
 Enter the RPC Endpoint: http://127.0.0.1:26657
 Enter the valoper address: someValoperAddr1tt8dczjk62pnwwanm99rq2kw25
  
 You have entered the following details:
-Rest Endpoint: http://127.0.0.1:26657
+Rest Endpoint: http://127.0.0.1:1317
 RPC Endpoint: http://127.0.0.1:26657
 Valoper(Validator Operator) address: someValoperAddr1tt8dczjk62pnwwanm99rq2kw25
 Are the entered values correct? Do you wish to proceed? (y/n): 
