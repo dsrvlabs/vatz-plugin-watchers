@@ -15,7 +15,7 @@ $ git clone https://github.com/dsrvlabs/vatz-plugin-watcher-cosmos.git
 $ cd vatz-plugin-watcher-cosmos
 $ make install
 ```
-- 
+
 - Install with Vatz CLI command
 ```
 $ vatz plugin install --help
