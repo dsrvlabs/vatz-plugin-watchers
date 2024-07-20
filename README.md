@@ -88,7 +88,7 @@ Rest Endpoint: http://127.0.0.1:1317
 RPC Endpoint: http://127.0.0.1:26657
 Valoper(Validator Operator) address: someValoperAddr1tt8dczjk62pnwwanm99rq2kw25
 Are the entered values correct? Do you wish to proceed? (y/n): 
-Validator address: cosmosvaloper1...
+Validator hex address: FFFFA1C5EKD...
 ```
 
 ## TroubleShooting
