@@ -33,7 +33,7 @@ if [ -z "$CONS_PUB_KEY" ]; then
     exit 1
 fi
 
-echo "Consensus public key: $CONS_PUB_KEY"
+# echo "Consensus public key: $CONS_PUB_KEY"
 
 # Function to fetch validators from a specific page
 fetch_validators() {
