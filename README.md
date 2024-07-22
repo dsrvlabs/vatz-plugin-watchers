@@ -1,4 +1,4 @@
-# vatz-plugin-watcher-cosmos
+# vatz-plugin-watchers
 Vatz plugin for monitoring node's validating status 
 
 
@@ -11,8 +11,8 @@ Vatz plugin for monitoring node's validating status
 ### Install Plugins
 - Install with source
 ```
-$ git clone https://github.com/dsrvlabs/vatz-plugin-watcher-cosmos.git
-$ cd vatz-plugin-watcher-cosmos
+$ git clone https://github.com/dsrvlabs/vatz-plugin-watchers.git
+$ cd vatz-plugin-watchers
 $ make install
 ```
 
@@ -32,7 +32,7 @@ Flags:
 ```
 > please make sure install path for the plugins repository URL.
 ```
-$ vatz plugin install github.com/dsrvlabs/vatz-plugin-watcher-cosmos/plugins/watcher_cosmos node_watcher_cosmos
+$ vatz plugin install github.com/dsrvlabs/vatz-plugin-watchers/plugins/watcher_cosmos node_watcher_cosmos
 ```
 - Check plugins list with Vatz CLI command
 ```
@@ -40,7 +40,7 @@ $ vatz plugin list
 +----------------+------------+---------------------+-------------------------------------------------------------------------------+---------+
 | NAME           | IS ENABLED | INSTALL DATE        | REPOSITORY                                                                    | VERSION |
 +----------------+------------+---------------------+-------------------------------------------------------------------------------+---------+
-| watcher_cosmos | true       | 2024-07-19 12:26:50 | github.com/dsrvlabs/vatz-plugin-watcher-cosmos/plugins/watcher_cosmos         | latest  |
+| watcher_cosmos | true       | 2024-07-19 12:26:50 | github.com/dsrvlabs/vatz-plugin-watchers/plugins/watcher_cosmos               | latest  |
 +----------------+------------+---------------------+-------------------------------------------------------------------------------+---------+
 
 ```
@@ -101,4 +101,4 @@ Validator hex address: 5F986JJA54869925JSBA7F2FEA04D721B8F0B
 
 ## License
 
-`vatz-plugin-watcher-cosmos` is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), also included in our repository in the `LICENSE` file.
+`vatz-plugin-watchers` is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), also included in our repository in the `LICENSE` file.

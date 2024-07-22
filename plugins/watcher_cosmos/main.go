@@ -4,8 +4,8 @@ import (
 	"context"
 	"flag"
 	"fmt"
+	rpc "github.com/dsrvlabs/vatz-plugin-watchers/rpc/cosmos"
 
-	rpc "github.com/dsrvlabs/vatz-plugin-watcher-cosmos/rpc"
 	"github.com/rs/zerolog/log"
 
 	pluginpb "github.com/dsrvlabs/vatz-proto/plugin/v1"

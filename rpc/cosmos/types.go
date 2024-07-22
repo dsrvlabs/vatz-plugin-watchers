@@ -1,4 +1,4 @@
-package rpc
+package cosmos
 
 // BlockResponse represents the structure of a block in the cosmos
 type BlockResponse struct {

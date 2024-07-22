@@ -1,4 +1,4 @@
-module github.com/dsrvlabs/vatz-plugin-watcher-cosmos
+module github.com/dsrvlabs/vatz-plugin-watchers
 
 go 1.19
 
